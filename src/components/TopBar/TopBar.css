@@ -1,0 +1,153 @@
+.topbar{
+    height:45px;
+    background:linear-gradient(90deg,#d50000,#3f2b96);
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    font-size:14px;
+}
+
+.topbar-left,
+.topbar-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.topbar button{
+    background:#2b7cff;
+    color:#fff;
+    border:none;
+    padding:7px 16px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.topbar button:hover{
+    background:#1d5fd3;
+}
+
+.social{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.social span{
+    width:32px;
+    height:32px;
+    background:#fff;
+    color:#222;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.social span:hover{
+    background:#e30613;
+    color:#fff;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:992px){
+
+    .topbar{
+        padding:0 20px;
+    }
+
+    .topbar-left{
+        gap:12px;
+        font-size:12px;
+    }
+
+    .topbar button{
+        display:none;
+    }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .topbar{
+        height:auto;
+        padding:10px 15px;
+        justify-content:center;
+    }
+
+    .topbar-left{
+        display:none;
+    }
+
+    .topbar-right{
+        width:100%;
+        justify-content:center;
+    }
+
+    .social{
+        width:100%;
+        justify-content:center;
+        gap:16px;
+    }
+
+    .social span{
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
+}
+@media (max-width:768px){
+
+    .topbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: auto;
+        padding: 10px 15px;
+        justify-content: center;
+    }
+
+    .topbar-left{
+        display: none;
+    }
+
+    .topbar-right{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .social{
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .social span{
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+}
+.social span svg{
+    font-size:18px;
+}
+
+@media (max-width:768px){
+    .social span svg{
+        font-size:22px;
+    }
+}

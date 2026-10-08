@@ -1,0 +1,110 @@
+.campus{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    padding:90px 80px;
+}
+
+.campus-left{
+    flex:1;
+}
+
+.campus-left h5{
+    color:#e30613;
+    letter-spacing:2px;
+}
+
+.campus-left h2{
+    font-size:42px;
+    margin:20px 0;
+}
+
+.campus-left p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.campus-left button{
+    background:#e30613;
+    color:#fff;
+    border:none;
+    padding:14px 28px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.campus-right{
+    flex:1;
+}
+
+.img-box{
+    height:400px;
+    border-radius:15px;
+    background:#ddd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    color:#555;
+}
+
+/* ===========================
+   Campus Responsive
+=========================== */
+
+@media (max-width: 992px){
+
+    .campus{
+        flex-direction: column;
+        padding: 50px 25px;
+        gap: 40px;
+    }
+
+    .campus-left,
+    .campus-right{
+        width: 100%;
+    }
+
+    .campus-left h2{
+        font-size: 34px;
+    }
+
+    .img-box{
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px){
+
+    .campus{
+        padding: 40px 18px;
+    }
+
+    .campus-left h2{
+        font-size: 28px;
+    }
+
+    .campus-left p{
+        font-size: 15px;
+    }
+
+    .campus-left button{
+        width: 100%;
+        padding: 14px;
+    }
+
+    .img-box{
+        height: 220px;
+        font-size: 20px;
+    }
+}
+
+.img-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}

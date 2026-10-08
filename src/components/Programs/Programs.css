@@ -1,0 +1,99 @@
+.programs{
+    padding:80px;
+    background:#fff;
+}
+
+.programs h5{
+    text-align:center;
+    color:#e30613;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+.programs h2{
+    text-align:center;
+    font-size:42px;
+    margin:15px 0 50px;
+}
+
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.program-card{
+    background:#fff;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.program-card:hover{
+    transform:translateY(-10px);
+}
+
+.program-card h3{
+    color:#e30613;
+    font-size:28px;
+}
+
+.program-card p{
+    margin:20px 0;
+    color:#555;
+}
+
+.program-card button{
+    background:#e30613;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+@media (max-width:992px){
+
+    .programs{
+        padding:50px 25px;
+    }
+
+    .programs h2{
+        font-size:34px;
+        margin-bottom:40px;
+    }
+
+    .program-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .program-card{
+        padding:30px;
+    }
+}
+
+@media (max-width:576px){
+
+    .programs{
+        padding:40px 18px;
+    }
+
+    .programs h2{
+        font-size:28px;
+    }
+
+    .program-grid{
+        grid-template-columns:1fr;
+    }
+
+    .program-card{
+        padding:25px;
+    }
+
+    .program-card h3{
+        font-size:24px;
+    }
+}
