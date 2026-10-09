@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
-import About from "./pages/Home/About";
-import Schools from "./pages/Home/Schools";
-import Programs from "./pages/Home/Programs";
-import Admissions from "./pages/Home/Admissions";
-import Placements from "./pages/Home/Placements";
-import Contact from "./pages/Home/Contact";
+import Home from "./Pages/Home/Home.jsx";
+import About from "./Pages/Home/About.jsx";
+import Schools from "./Pages/Home/Schools.jsx";
+import Programs from "./Pages/Home/Programs.jsx";
+import Admissions from "./Pages/Home/Admissions.jsx";
+import Placements from "./Pages/Home/Placements.jsx";
+import Contact from "./Pages/Home/Contact.jsx";
 
 function App() {
   return (

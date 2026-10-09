@@ -1,5 +1,4 @@
 import "./Stats.css";
-
 import CountUpModule from "react-countup";
 
 const CountUp = CountUpModule.default;
